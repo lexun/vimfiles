@@ -51,8 +51,8 @@ set winheight=5
 set winminheight=5
 set winheight=999
 
-colorscheme solarized
-set background=light " or dark
+colorscheme molokai
+set background=dark " or light
 set t_Co=256
 
 set splitbelow splitright
@@ -72,6 +72,7 @@ set formatoptions=n
 
 " check to make sure vim has been compiled with colorcolumn support
 " before enabling it
+highlight ColorColumn ctermbg=7
 if exists("+colorcolumn")
   set colorcolumn=80
 endif
@@ -89,7 +90,7 @@ set statusline+=\ %{fugitive#statusline()}
 " encoding
 set statusline+=\ [%{strlen(&fenc)?&fenc:&enc}]
 " rvm
-set statusline+=\ %{rvm#statusline()}
+" set statusline+=\ %{rvm#statusline()}
 " line x of y
 set statusline+=\ [line\ %l\/%L]
 
@@ -142,7 +143,7 @@ nnoremap j gj
 nnoremap k gk
 
 " Map ESC
-imap jj <ESC>
+imap jk <ESC>
 
 " ACK
 set grepprg=ack

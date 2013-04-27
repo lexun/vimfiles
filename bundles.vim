@@ -12,7 +12,6 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 Bundle "git://github.com/mileszs/ack.vim.git"
-Bundle "git://github.com/tpope/vim-rvm.git"
 Bundle "git://github.com/tpope/vim-fugitive"
 Bundle "git://github.com/tpope/vim-rails.git"
 Bundle "git://github.com/tpope/vim-surround.git"
@@ -49,7 +48,11 @@ Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "tomtom/tlib_vim"
 Bundle "honza/vim-snippets"
 Bundle "garbas/vim-snipmate"
+Bundle "git://github.com/daviddavis/vim-colorpack.git"
+Bundle "git://github.com/dart-lang/dart-vim-plugin.git"
+Bundle "git://github.com/airblade/vim-gitgutter.git"
 
 filetype plugin indent on     " and turn it back on!
 
-runtime macros/matchit.vim    
+runtime macros/matchit.vim
+
