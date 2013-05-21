@@ -52,6 +52,7 @@ Bundle "git://github.com/daviddavis/vim-colorpack.git"
 Bundle "git://github.com/dart-lang/dart-vim-plugin.git"
 Bundle "git://github.com/airblade/vim-gitgutter.git"
 Bundle "git://github.com/terryma/vim-multiple-cursors.git"
+Bundle "git://github.com/Lokaltog/powerline.git"
 
 filetype plugin indent on     " and turn it back on!
 
