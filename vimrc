@@ -13,6 +13,7 @@ silent! runtime bundles.vim
 filetype plugin indent on
 let mapleader = ","
 let g:mapleader = ","
+set clipboard=unnamed
 set modelines=0
 set history=1000
 set nobackup
@@ -44,7 +45,7 @@ set laststatus=2
 set number
 set relativenumber
 set undofile
-set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+set mouse=a
 
 " Auto adjust window sizes when they become current
 set winwidth=84
@@ -128,21 +129,6 @@ nmap N Nzz
 imap <C-h> <ESC>^
 imap <C-l> <ESC>$
 
-" Turn off arrow keys (this might not be a good idea for beginners, but it is
-" the best way to ween yourself of arrow keys on to hjkl)
-" http://yehudakatz.com/2010/07/29/everyone-who-tried-to-convince-me-to-use-vim-was-wrong/
-nnoremap <Left> :echoe "Use h"<CR>
-nnoremap <Right> :echoe "Use l"<CR>
-nnoremap <Up> :echoe "Use k"<CR>
-nnoremap <Down> :echoe "Use j"<CR>"
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
-
-nnoremap j gj
-nnoremap k gk
-
 " Map ESC
 imap jk <ESC>
 
@@ -193,12 +179,6 @@ nmap <leader>q :wqa!<CR>
 nmap <leader>w :w!<CR>
 nmap <leader><Esc> :q!<CR>
 
-" EXTERNAL COPY / PASTE
-" Press F2 before and after pasting from an external Window, not required for
-" MacVim
-set pastetoggle=<F2>
-map <C-v> "+gP<CR>
-vmap <C-c> "+y
 
 " Delete trailing whitespace
 nmap <leader>t :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
@@ -241,7 +221,7 @@ let NERDTreeShowBookmarks = 0
 let NERDChristmasTree = 1
 let NERDTreeWinPos = "left"
 let NERDTreeHijackNetrw = 1
-let NERDTreeQuitOnOpen = 0
+let NERDTreeQuitOnOpen = 1
 let NERDTreeWinSize = 50
 let NERDTreeChDirMode = 2
 let NERDTreeDirArrows = 1
@@ -355,7 +335,7 @@ if has("gui_running")
   set guioptions-=l " no scrollbar on the left
   set guioptions-=b " no scrollbar on the bottom
   set guioptions=aiA
-  set mouse=v
+  set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
   set guifont=Droid\ Sans\ Mono\ for\ Powerline:h12 "<- Maybe a good idea when using mac
 endif
 set guifont=Droid\ Sans\ Mono\ for\ Powerline:h12
