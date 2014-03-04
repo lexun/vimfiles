@@ -1,5 +1,7 @@
 set nocompatible               " be iMproved
 
+let g:gitgutter_realtime = 0   " temporary fix - issue 106
+
 "  ---------------------------------------------------------------------------
 "  Plugins
 "  ---------------------------------------------------------------------------
@@ -13,7 +15,11 @@ silent! runtime bundles.vim
 filetype plugin indent on
 let mapleader = ","
 let g:mapleader = ","
-set clipboard=unnamed
+
+if $TMUX == ''
+  set clipboard+=unnamed
+endif
+
 set modelines=0
 set history=1000
 set nobackup
@@ -42,7 +48,6 @@ set ttyfast
 set ruler
 set backspace=indent,eol,start
 set laststatus=2
-set number
 set relativenumber
 set undofile
 set mouse=a
