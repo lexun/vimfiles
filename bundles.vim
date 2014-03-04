@@ -53,6 +53,15 @@ Bundle "git://github.com/dart-lang/dart-vim-plugin.git"
 Bundle "git://github.com/airblade/vim-gitgutter.git"
 Bundle "git://github.com/terryma/vim-multiple-cursors.git"
 Bundle "git://github.com/Lokaltog/powerline.git"
+Bundle "git://github.com/tpope/vim-cucumber.git"
+Bundle "git://github.com/digitaltoad/vim-jade.git"
+Bundle "git://github.com/wavded/vim-stylus.git"
+Bundle "git://github.com/tpope/vim-ragtag.git"
+Bundle "git://github.com/slim-template/vim-slim.git"
+Bundle "git://github.com/Shutnik/jshint2.vim.git"
+Bundle "git://github.com/guns/vim-clojure-static.git"
+Bundle "git://github.com/tpope/vim-fireplace.git"
+Bundle "git://github.com/tpope/vim-classpath.git"
 
 filetype plugin indent on     " and turn it back on!
 
