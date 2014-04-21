@@ -1,3 +1,8 @@
+# No longer in use
+
+Initially forked from http://github.com/krisleech/vimfiles/, now I'm using http://github.com/carlhuda/janus as a base.
+
+
 # Ruby/Rails centric vimfiles and installer
 
 With a great colour scheme and support for auto-complete, git, rvm and sparkup.
